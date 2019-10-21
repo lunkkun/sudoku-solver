@@ -4,9 +4,10 @@ namespace Lunkkun\Sudoku\Tests;
 
 use Lunkkun\Sudoku\Board;
 use Lunkkun\Sudoku\Solvers\BruteForceSolver;
+use Lunkkun\Sudoku\Solvers\PermutationsSolver;
 use PHPUnit\Framework\TestCase;
 
-class BruteForceSolverTest extends TestCase
+class PermutationsSolverTest extends TestCase
 {
     public function testSolvesSudoku(): void
     {
@@ -14,10 +15,10 @@ class BruteForceSolverTest extends TestCase
         $solved = include(__DIR__ . '/../data/test/solved.php');
 
         $board = new Board($unsolved);
-        $solver = new BruteForceSolver($board);
+        $solver = new PermutationsSolver($board);
         $solver->solve();
 
-        $this->assertTrue($solver->getBoard()->isSolved());
+        //$this->assertTrue($solver->getBoard()->isSolved());
         $this->assertEquals((string)new Board($solved), (string)$solver->getBoard());
     }
 }

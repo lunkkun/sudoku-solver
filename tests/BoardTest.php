@@ -9,7 +9,7 @@ class BoardTest extends TestCase
 {
     public function testValidatesBoard(): void
     {
-        $rows = include('data/test/invalid.php');
+        $rows = include(__DIR__ . '/../data/test/invalid.php');
         try {
             $board = new Board($rows);
         } catch (\Exception $e) {
@@ -20,7 +20,7 @@ class BoardTest extends TestCase
 
     public function testLoadsBoard(): void
     {
-        $rows = include('data/test/puzzle.php');
+        $rows = include(__DIR__ . '/../data/test/puzzle.php');
         $board = new Board($rows);
         $this->assertInstanceOf(Board::class, $board);
     }
@@ -33,7 +33,7 @@ class BoardTest extends TestCase
 
     public function testChecksRow(): void
     {
-        $rows = include('data/test/puzzle.php');
+        $rows = include(__DIR__ . '/../data/test/puzzle.php');
         $board = new Board($rows);
         $this->assertTrue($board->checkRow(0));
 
@@ -43,7 +43,7 @@ class BoardTest extends TestCase
 
     public function testChecksColumn(): void
     {
-        $rows = include('data/test/puzzle.php');
+        $rows = include(__DIR__ . '/../data/test/puzzle.php');
         $board = new Board($rows);
         $this->assertTrue($board->checkColumn(0));
 
@@ -53,7 +53,7 @@ class BoardTest extends TestCase
 
     public function testChecksBox(): void
     {
-        $rows = include('data/test/puzzle.php');
+        $rows = include(__DIR__ . '/../data/test/puzzle.php');
         $board = new Board($rows);
         $this->assertTrue($board->checkBoxAtPosition(0, 0));
 
@@ -63,7 +63,7 @@ class BoardTest extends TestCase
 
     public function testChecksComplete(): void
     {
-        $rows = include('data/test/solved.php');
+        $rows = include(__DIR__ . '/../data/test/solved.php');
         $board = new Board($rows);
         $this->assertTrue($board->isComplete());
 
@@ -73,7 +73,7 @@ class BoardTest extends TestCase
 
     public function testChecksSolved(): void
     {
-        $rows = include('data/test/solved.php');
+        $rows = include(__DIR__ . '/../data/test/solved.php');
         $board = new Board($rows);
         $this->assertTrue($board->isSolved());
 
@@ -83,7 +83,7 @@ class BoardTest extends TestCase
 
     public function testTries(): void
     {
-        $rows = include('data/test/puzzle.php');
+        $rows = include(__DIR__ . '/../data/test/puzzle.php');
         $board = new Board($rows);
 
         $this->assertTrue($board->try(0, 0, 1));
