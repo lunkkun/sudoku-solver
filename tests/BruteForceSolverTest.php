@@ -10,8 +10,8 @@ class BruteForceSolverTest extends TestCase
 {
     public function testSolvesSudoku(): void
     {
-        $unsolved = include('data/test/puzzle.php');
-        $solved = include('data/test/solved.php');
+        $unsolved = include(__DIR__ . '/../data/test/puzzle.php');
+        $solved = include(__DIR__ . '/../data/test/solved.php');
 
         $board = new Board($unsolved);
         $solver = new BruteForceSolver($board);
