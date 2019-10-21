@@ -1,3 +1,3 @@
 # Sudoku solver
 
-Solves sudoku's in various ways.
+Solves sudokus in various ways.
