@@ -19,13 +19,13 @@ class PermutationsGenerator extends CachedGenerator implements Iterator
             return;
         }
 
-        foreach ($values as $key => $value) {
-            $remaining = $values;
-            array_splice($remaining, $key, 1);
-            foreach ($this->generator($remaining) as $permutation) {
+        $remaining = [];
+        while (($value = array_pop($values)) !== null) {
+            foreach ($this->generator(array_merge($values, $remaining)) as $permutation) {
                 $permutation[] = $value;
                 yield $permutation;
             }
+            $remaining[] = $value;
         }
     }
 }
