@@ -1,0 +1,27 @@
+{
+    "name": "lunkkun/sudoku",
+    "description": "Sudoku solver/checker/generator 'n whatnot",
+    "authors": [
+        {
+            "name": "Luuk Linders",
+            "email": "lunkkun@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lunkkun\\Sudoku\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lunkkun\\Sudoku\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
