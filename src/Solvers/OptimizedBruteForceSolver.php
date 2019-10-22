@@ -40,11 +40,13 @@ class OptimizedBruteForceSolver extends BaseSolver implements Solver
         }
 
         while (($row = key($options)) !== null) {
+            // `current()` is no longer by reference since 7.0.0
             //[&$optionsForRow, &$missingForRow] = current($options);
             [&$optionsForRow, &$missingForRow] = $options[$row];
 
             while (($col = key($optionsForRow)) !== null) {
-//                [&$value, &$optionsForCol] = current($optionsForRow);
+                // `current()` is no longer by reference since 7.0.0
+                //[&$value, &$optionsForCol] = current($optionsForRow);
                 [&$value, &$optionsForCol] = $optionsForRow[$col];
 
                 if ($value !== 0) {
