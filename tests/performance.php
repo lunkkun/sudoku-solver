@@ -16,6 +16,15 @@ echo "Brute force: " . ($end - $start) . PHP_EOL;
 unset($solver);
 
 $start = microtime(true);
+$solver = new \Lunkkun\Sudoku\Solvers\OptimizedBruteForceSolver($board);
+$solver->solve();
+$end = microtime(true);
+
+echo "Optimized brute force: " . ($end - $start) . PHP_EOL;
+
+unset($solver);
+
+$start = microtime(true);
 $solver = new \Lunkkun\Sudoku\Solvers\PermutationsSolver($board);
 $solver->solve();
 $end = microtime(true);
