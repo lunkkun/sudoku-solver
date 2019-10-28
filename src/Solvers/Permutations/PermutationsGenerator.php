@@ -3,17 +3,15 @@
 namespace Lunkkun\Sudoku\Solvers\Permutations;
 
 use Lunkkun\CachedGenerator\CachedGenerator;
-use Generator;
-use Iterator;
 
-class PermutationsGenerator extends CachedGenerator implements Iterator
+class PermutationsGenerator extends CachedGenerator
 {
     public function __construct(array $values)
     {
         parent::__construct($this->generator($values));
     }
 
-    protected function generator(array $values): Generator
+    protected function generator(array $values): \Generator
     {
         if (count($values) === 1) {
             yield $values;
