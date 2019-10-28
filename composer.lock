@@ -4,8 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ec5cacbac9c9e4910aa1290a10c464f",
-    "packages": [],
+    "content-hash": "0f1833c9452426fd9a3e4dad22197479",
+    "packages": [
+        {
+            "name": "lunkkun/cached-generator",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lunkkun/php-cached-generator.git",
+                "reference": "dfdf964ca4ef5c114e1850b9189e32fbf616be98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lunkkun/php-cached-generator/zipball/dfdf964ca4ef5c114e1850b9189e32fbf616be98",
+                "reference": "dfdf964ca4ef5c114e1850b9189e32fbf616be98",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lunkkun\\CachedGenerator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luuk Linders",
+                    "email": "lunkkun@gmail.com"
+                }
+            ],
+            "description": "A PHP Generator class that caches it's generated values.",
+            "homepage": "https://github.com/lunkkun/php-cached-generator",
+            "keywords": [
+                "cache",
+                "generator",
+                "iterator",
+                "php"
+            ],
+            "time": "2019-10-28T12:41:18+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -680,16 +727,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.4.1",
+            "version": "8.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "366a4a0f2b971fd43b7c351d621e8dd7d7131869"
+                "reference": "a142a7e66c0ea7b5b6c04ee27f08d10d1137cd9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/366a4a0f2b971fd43b7c351d621e8dd7d7131869",
-                "reference": "366a4a0f2b971fd43b7c351d621e8dd7d7131869",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a142a7e66c0ea7b5b6c04ee27f08d10d1137cd9b",
+                "reference": "a142a7e66c0ea7b5b6c04ee27f08d10d1137cd9b",
                 "shasum": ""
             },
             "require": {
@@ -759,7 +806,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-10-07T12:57:41+00:00"
+            "time": "2019-10-28T10:39:51+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

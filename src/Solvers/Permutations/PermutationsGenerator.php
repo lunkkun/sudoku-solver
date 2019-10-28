@@ -2,6 +2,7 @@
 
 namespace Lunkkun\Sudoku\Solvers\Permutations;
 
+use Lunkkun\CachedGenerator\CachedGenerator;
 use Generator;
 use Iterator;
 
