@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f1833c9452426fd9a3e4dad22197479",
+    "content-hash": "d615f9b66a6abf2940c2c9ca515446bb",
     "packages": [
         {
             "name": "lunkkun/cached-generator",
@@ -51,6 +51,53 @@
                 "php"
             ],
             "time": "2019-10-28T12:41:18+00:00"
+        },
+        {
+            "name": "lunkkun/permutations-generator",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lunkkun/php-permutations-generator.git",
+                "reference": "2e48692bf42e9b16e71b643aff2e632d15ff1994"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lunkkun/php-permutations-generator/zipball/2e48692bf42e9b16e71b643aff2e632d15ff1994",
+                "reference": "2e48692bf42e9b16e71b643aff2e632d15ff1994",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lunkkun\\PermutationsGenerator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luuk Linders",
+                    "email": "lunkkun@gmail.com"
+                }
+            ],
+            "description": "A PHP Generator that generates all possible permutations for a given array of values.",
+            "homepage": "https://github.com/lunkkun/php-permutations-generator",
+            "keywords": [
+                "cache",
+                "generator",
+                "iterator",
+                "permutations",
+                "php"
+            ],
+            "time": "2019-10-28T20:53:50+00:00"
         }
     ],
     "packages-dev": [
