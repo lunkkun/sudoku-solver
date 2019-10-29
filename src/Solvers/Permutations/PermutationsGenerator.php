@@ -3,12 +3,12 @@
 namespace Lunkkun\Sudoku\Solvers\Permutations;
 
 use Lunkkun\CachedGenerator\CachedGenerator;
+use Lunkkun\PermutationsGenerator\PermutationsGenerator as BaseGenerator;
 
 class PermutationsGenerator extends CachedGenerator
 {
     public function __construct(array $values)
     {
-        $generator = new \Lunkkun\PermutationsGenerator\PermutationsGenerator();
-        parent::__construct($generator($values));
+        parent::__construct((new BaseGenerator($values))->getInnerIterator());
     }
 }

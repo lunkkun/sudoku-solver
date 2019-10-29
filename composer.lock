@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d615f9b66a6abf2940c2c9ca515446bb",
+    "content-hash": "ba04bfe8bf149b6f6837d2b6164c97ef",
     "packages": [
         {
             "name": "lunkkun/cached-generator",
-            "version": "v1.0.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lunkkun/php-cached-generator.git",
-                "reference": "dfdf964ca4ef5c114e1850b9189e32fbf616be98"
+                "reference": "3fbcc51d1d2017f0004b9d2b6da926829d7523bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lunkkun/php-cached-generator/zipball/dfdf964ca4ef5c114e1850b9189e32fbf616be98",
-                "reference": "dfdf964ca4ef5c114e1850b9189e32fbf616be98",
+                "url": "https://api.github.com/repos/lunkkun/php-cached-generator/zipball/3fbcc51d1d2017f0004b9d2b6da926829d7523bb",
+                "reference": "3fbcc51d1d2017f0004b9d2b6da926829d7523bb",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                     "email": "lunkkun@gmail.com"
                 }
             ],
-            "description": "A PHP Generator class that caches it's generated values.",
+            "description": "A PHP Generator class that caches its generated values.",
             "homepage": "https://github.com/lunkkun/php-cached-generator",
             "keywords": [
                 "cache",
@@ -50,20 +50,20 @@
                 "iterator",
                 "php"
             ],
-            "time": "2019-10-28T12:41:18+00:00"
+            "time": "2019-10-29T19:50:57+00:00"
         },
         {
             "name": "lunkkun/permutations-generator",
-            "version": "v1.0.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lunkkun/php-permutations-generator.git",
-                "reference": "2e48692bf42e9b16e71b643aff2e632d15ff1994"
+                "reference": "cedf43a521fbd0471034d3fe9b91f53571f2bb59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lunkkun/php-permutations-generator/zipball/2e48692bf42e9b16e71b643aff2e632d15ff1994",
-                "reference": "2e48692bf42e9b16e71b643aff2e632d15ff1994",
+                "url": "https://api.github.com/repos/lunkkun/php-permutations-generator/zipball/cedf43a521fbd0471034d3fe9b91f53571f2bb59",
+                "reference": "cedf43a521fbd0471034d3fe9b91f53571f2bb59",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 "permutations",
                 "php"
             ],
-            "time": "2019-10-28T20:53:50+00:00"
+            "time": "2019-10-29T14:33:22+00:00"
         }
     ],
     "packages-dev": [
