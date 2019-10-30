@@ -2,10 +2,10 @@
 
 namespace Lunkkun\Sudoku\Solvers\Permutations;
 
-use Lunkkun\CachedGenerator\CachedGenerator;
+use Lunkkun\CachingGenerator\CachingGenerator;
 use Lunkkun\PermutationsGenerator\PermutationsGenerator as BaseGenerator;
 
-class PermutationsGenerator extends CachedGenerator
+class PermutationsGenerator extends CachingGenerator
 {
     public function __construct(array $values)
     {
