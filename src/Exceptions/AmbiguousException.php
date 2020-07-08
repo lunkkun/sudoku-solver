@@ -2,7 +2,7 @@
 
 namespace Lunkkun\Sudoku\Exceptions;
 
-class AmbigousException extends \Exception
+class AmbiguousException extends \Exception
 {
 
 }
